@@ -1,0 +1,1 @@
+int main(){int x,y;char*a="int main(){int x,y;char*a=\"%s\";char*b=(char*)malloc(strlen(a)+100);for(x=0,y=0;x<strlen(a);x++){if(*(a+x)=='\\\\'||*(a+x)=='\"')*(b+y++)='\\\\';*(b+y++)=*(a+x);}printf(a,b);}";char*b=(char*)malloc(strlen(a)+100);for(x=0,y=0;x<strlen(a);x++){if(*(a+x)=='\\'||*(a+x)=='"')*(b+y++)='\\';*(b+y++)=*(a+x);}printf(a,b);}
